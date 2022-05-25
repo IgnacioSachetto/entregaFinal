@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.instituciones2 {
+  margin-top: 10px;
+}
+.instituciones2 img {
+  height: 250px;
+  width: 275px;
+}
+.instituciones2 .instituto {
+  height: 150px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0px 3px;
+}
+body .navbar {
+  border: 1px solid white;
+  display: block;
+}
+body .logo img {
+  grid-area: logo;
+  height: 40px;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.padreFooterSobre, .padreFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footerS footerS";
+}
+.padreFooterSobre .footerSobreMi, .padreFooterSobre .footerContacto, .padreFooter .footerSobreMi, .padreFooter .footerContacto {
+  background-color: grey;
+  color: white;
+  border: 2px solid white;
+  grid-area: footerS;
+  margin-top: 50px;
+  width: 100%;
+}
+.padreFooterSobre .footerSobreMi a, .padreFooterSobre .footerContacto a, .padreFooter .footerSobreMi a, .padreFooter .footerContacto a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.padreFooterSobre .footerSobreMi .copyright, .padreFooterSobre .footerContacto .copyright, .padreFooter .footerSobreMi .copyright, .padreFooter .footerContacto .copyright {
+  float: right;
+  color: white;
+  grid-area: copy;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+main {
+  border: 1px solid white;
+}
+main .itemContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgb(24, 24, 24);
+  border: 3px solid white;
+  grid-template-areas: "formulario formulario formulario" "tituloRedes tituloRedes tituloRedes" "redes redes redes";
+}
+main .itemContacto .div-contacto {
+  display: block;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 25px;
+  grid-area: formulario;
+}
+main .itemContacto .div-contacto input, main .itemContacto .div-contacto textarea {
+  width: 100%;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 2px outset white;
+  color: white;
+}
+main .itemContacto .div-contacto input:focus, main .itemContacto .div-contacto textarea:focus {
+  width: 103%;
+  transition: all 1s;
+}
+main .itemContacto .div-contacto input[type=submit] {
+  width: 50%;
+  background: black;
+  border: 2px outset white;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+}
+main .itemContacto .div-contacto input[type=submit]:hover {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.425);
+  color: black;
+  border: 2px outset black;
+}
+main .itemContacto .redes {
+  grid-area: redes;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  border-top: 3px solid white;
+}
+main .itemContacto .redes .redesLogo {
+  display: block;
+  margin: auto;
+}
+main .itemContacto .redes .redesLogo ul {
+  list-style-type: none;
+}
+main .itemContacto .redes .redesLogo ul li {
+  display: inline-block;
+}
+main .itemContacto .redes .redesLogo ul li a {
+  display: inline-block;
+  margin: auto;
+}
+main .itemContacto .redes .redesLogo ul li a img {
+  width: 70px;
+  height: 70px;
+}
+main .itemContacto .redes .redesLogo .logo-linkedin {
+  margin-left: 75px;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+main .itemContacto .redes .redesLogo .logo-linkedin img:hover {
+  border-bottom: 2px solid #007ab9;
+  background-color: #007ab9;
+  border-radius: 10px;
+}
+main .itemContacto .redes .redesLogo .logo-gmail {
+  margin-left: 75px;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+main .itemContacto .redes .redesLogo .logo-gmail img:hover {
+  border-bottom: 2px solid #f44336;
+  background-color: #f44336;
+  border-radius: 10px;
+}
+main .itemContacto .redes .redesLogo .logo-github {
+  margin-left: 75px;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+main .itemContacto .redes .redesLogo .logo-github img:hover {
+  border-bottom: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+main .itemContacto .redes .redesLogo .logo-telegram {
+  margin-left: 75px;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+main .itemContacto .redes .redesLogo .logo-telegram img:hover {
+  border-bottom: 2px solid #229ED9;
+  background-color: #229ED9;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main .itemContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: "formulario" "tituloRedes" "redes ";
+  }
+  main .itemContacto .div-contacto {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .itemContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: "formulario" "tituloRedes" "redes ";
+  }
+  main .itemContacto .div-contacto {
+    width: 80%;
+    grid-area: formulario;
+  }
+  main .itemContacto .div-contacto input[type=submit] {
+    width: 80%;
+  }
+  main .itemContacto .redes {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  main .itemContacto .redes .redesLogo {
+    display: inline-block;
+    margin-right: 100px;
+  }
+}
+main .foto-proyecto {
+  opacity: 0.2;
+}
+main .foto-proyecto:hover {
+  border: 3px solid black;
+  opacity: 1;
+}
+
+main .btn-sobre {
+  color: white;
+  text-decoration: none;
+}
+main .btn-sobre:hover {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+}
+main .btn-contacto {
+  color: black;
+  text-decoration: none;
+}
+main .btn-contacto:hover {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+main .btn-proyectos {
+  color: white;
+  text-decoration: none;
+}
+main .btn-proyectos:hover {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+main .carousel {
+  width: 95%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+main .carousel-inner {
+  background-image: linear-gradient(to bottom, rgb(19, 16, 16) 50%, black);
+  border: 1px solid white;
+}
+main .carousel-item {
+  margin: auto;
+}
+main .carousel-item img {
+  width: 400px;
+  height: 250px;
+  opacity: 0.6;
+  margin: auto;
+}
+main .titulosTecnologia {
+  grid-area: nombreTecnologia;
+  background-image: linear-gradient(to bottom, black 10%, grey);
+  border: 1px solid white;
+  height: 35px;
+  text-align: center;
+  font-size: 25px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+main .logoTecnologia {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  display: inline-block;
+}
+main #carouselExampleCaptions4 {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=destino.css.map */

@@ -1,0 +1,51 @@
+main{
+
+    .btn-sobre{
+        color:white;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+            color:black;
+            font-style: italic;
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+    
+    .btn-contacto{
+        color:black;
+        text-decoration: none;
+        &:hover{
+            color:white;
+            text-decoration: none;
+            font-size: large;
+            font-style: italic;
+            font-weight: bold;
+
+
+
+        }
+    }
+    
+    .btn-proyectos{
+        color:white;
+        text-decoration: none;
+        &:hover{
+            color:white;
+            text-decoration: none;
+            font-size: large;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+    
+    
+
+
+
+}
+
+
+
+

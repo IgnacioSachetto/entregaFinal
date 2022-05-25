@@ -1,0 +1,52 @@
+main{
+
+    
+    .carousel{
+        width:95%;
+        margin-right:2.5%;
+        margin-left: 2.5%;
+    }
+    
+    .carousel-inner{
+        background-image: linear-gradient(to bottom,rgb(19, 16, 16) 50% ,black);
+        border:1px solid white;
+    }
+    
+   
+    
+    .carousel-item{
+        margin:auto;
+    
+    }
+    
+    .carousel-item img {
+        width:400px;
+        height:250px;
+        opacity: 0.6;
+        margin:auto;    
+    }
+
+    
+    .titulosTecnologia {
+        grid-area: nombreTecnologia;
+        background-image: linear-gradient(to bottom,black 10% ,grey);
+        border:1px solid white;
+        height:35px;
+        text-align: center;
+        font-size: 25px;
+        width: 95%;
+        margin-left:2.5%;
+        margin-right:2.5%;
+    }
+    
+    .logoTecnologia{
+        width:200px;
+        height:150px;
+        padding:20px;
+        display:inline-block;
+    }
+
+    #carouselExampleCaptions4{
+        margin-bottom: 20px;
+    }
+}
